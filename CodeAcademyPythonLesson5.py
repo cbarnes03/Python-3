@@ -75,8 +75,22 @@ for dog_breed in dog_breeds_available_for_adoption:
     break
   
     
-#Part 7)
-#Part 8)
+#Part 7) Loop Control: Continue
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for i in ages:
+  if i >= 21:
+    print(i)
+    continue
+#Part 8) Nested Loops
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+scoops_sold = 0
+for location in sales_data:
+  print(location)
+  for amount in location:
+      scoops_sold += amount
+print(scoops_sold)
+
 #Part 9)
 #Part 10)
 #Part 11)
