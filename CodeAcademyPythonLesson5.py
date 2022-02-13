@@ -91,7 +91,22 @@ for location in sales_data:
       scoops_sold += amount
 print(scoops_sold)
 
-#Part 9)
-#Part 10)
-#Part 11)
-#Part 12)
+#Part 9)List Comprehensions: Introduction
+grades = [90, 88, 62, 76, 74, 89, 48, 57]
+scaled_grades = [grade + 10 for grade in grades]
+print(scaled_grades)
+#Part 10)List Comprehensions: Conditionals
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+can_ride_coaster = [height for height in heights if height > 161]
+print(can_ride_coaster)
+#Part 11)Review
+# Your code below:
+single_digits = range(0,10)
+squares = []
+cubes =[number ** 3 for number in single_digits]
+for numbers in single_digits:
+  numbersquared = numbers**2
+  squares.append(numbersquared)
+  print(numbers)
+print(squares)
+print(cubes)
