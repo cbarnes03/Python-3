@@ -4,7 +4,7 @@ author: Charles Barnes
 """
 
 n=100
-#starting idea
+#starting idea but times out
 # sum =0
 # x = []
 # for i in range (1,n):
@@ -15,10 +15,10 @@ n=100
 
 #optimized equation for above
 n = n-1        
-y = ((n//3)*(2*3+(n//3-1)*3)//2)
-z = ((n//5)*(2*5+(n//5-1)*5)//2)
-a = ((n//15)*(2*15+(n//15-1)*15)//2)
-b = y+z-a
-print(b)
+mul3 = (n//3) * (2 * 3 + (n//3-1) * 3) //2
+mul5 = (n//5) * (2 * 5+ (n//5-1) * 5) //2
+overlap = (n//15) * (2 * 15+(n//15-1) * 15) //2
+total = mul3 + mul5 - overlap
+print(total)
 
 
