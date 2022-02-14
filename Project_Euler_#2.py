@@ -11,13 +11,20 @@ Created on Sun Feb 13 22:47:45 2022
 """
 
 #Trying to solve via for-loop (probably wont work in event n>>1)
-n = 10
-sum = 0
-x = []
-for i in range(1,n):
 #how to get odd #'s   i = i+(i-1)
 #how to get even #'s  i = i+1
-    while i<n:
-        x[i] = i+1
-    
-    
+#1.618034 is the golden ratio (the relationship between fibonacci # sequences)
+#as expected, the loop approach has runtime errors in n>>1
+# n = 10
+# sum = int(0)
+# x = []
+# for i in range(1,n):
+#     i=(((1.618034)**(i))-(1-1.618034)**(i))//(5**(1/2))
+#     if i > n:
+#         continue
+#     elif i % 2 == 0:
+#         x.append(i)
+#         sum+=int(i)
+# print(sum)
+#start here: equation gives fibonacci series
+i=(((1.618034)**(i))-(1-1.618034)**(i))//(5**(1/2))
