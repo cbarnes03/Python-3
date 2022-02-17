@@ -27,4 +27,12 @@ Created on Sun Feb 13 22:47:45 2022
 #         sum+=int(i)
 # print(sum)
 #start here: equation gives fibonacci series
-i=(((1.618034)**(i))-(1-1.618034)**(i))//(5**(1/2))
+f1=0
+f2=2
+sum=0
+while f1 < n:
+    f2,f1 = ((4*f2)+f1), f2
+    if f1 > n:
+        break
+    sum += f1
+print(sum)
